@@ -8,9 +8,9 @@
           class="btn"
           value="Liste des Nounous"
         />
-        <tableAdmin v-if="showNounous" :resultats="allNounous"></tableAdmin>
+        <!-- <tableAdmin v-if="showNounous" :resultats="allNounous"></tableAdmin> -->
       </div>
-
+<tableAdmin v-if="showNounous" :resultats="allNounous"></tableAdmin> 
       <div class="maitres">
         <input
           @click="ownersList"
@@ -18,8 +18,9 @@
           class="btn"
           value="Liste des Maitres"
         />
-        <tableAdmin v-if="showMaitres" :resultats="allMaitres"></tableAdmin>
+        <!-- <tableAdmin v-if="showMaitres" :resultats="allMaitres"></tableAdmin> -->
       </div>
+      <tableAdmin v-if="showMaitres" :resultats="allMaitres"></tableAdmin>
     </div>
     <myfooter />
   </div>
@@ -98,6 +99,7 @@ export default {
   min-height: 500px;
   background-color: whitesmoke;
   color: black;
+  /* background-color: #ff2d95; */
   font-family: "Merienda One", cursive, sans-serif;
   display: flex;
   flex-direction: column;
@@ -107,11 +109,16 @@ export default {
 }
 .nounous,
 .maitres {
-  width: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
   margin: 10px;
 }
 .btn {
-  width: 30%;
+  width: 100%;
   height: 50px;
   font-family: "Livvic", sans-serif;
   border-radius: 15px;
