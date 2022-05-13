@@ -50,6 +50,7 @@ export default {
     margin-bottom: 30px;
   }
   p {
+    padding-left: 1%;
     font-family: cursive, 'sans serif';
     margin-bottom: 20px;
   }

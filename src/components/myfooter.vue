@@ -68,6 +68,7 @@ export default {
   top: 750px;
   width: 100%;
   height: 220px;
+  /* height: 20vh; */
   font-family: cursive, "sans-serif";
   color: whitesmoke;
   background-color: #680d3b;
@@ -124,18 +125,22 @@ a {
 }
 h4 {
   color: whitesmoke;
+  font-weight: bold;
+  text-decoration: underline;
 }
 p:nth-child(odd):hover {
   filter: drop-shadow(0px 0px 4px #00b300);
 }
 p:nth-child(even):hover {
   filter: drop-shadow(0px 0px 4px #b61666);
+  /* filter: drop-shadow(0 0 0.95rem white); */
 }
 a:nth-child(odd):hover {
-  filter: drop-shadow(0px 0px 4px #00b300);
+  filter: drop-shadow(2px 2px 8px #00b300);
 }
 a:nth-child(even):hover {
-  filter: drop-shadow(0px 0px 4px #b61666);
+  /* filter: drop-shadow(0px 0px 4px #b61666); */
+  filter: drop-shadow(0 0 0.75rem white);
 }
 
 .subbox {

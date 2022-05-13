@@ -3,14 +3,14 @@
     <div class="box">
       <input
         type="submit"
-        class="btn"
+        class="btn btn1"
         @click="accept"
         value="J'accepte la garde"
       />
 
       <input
         type="submit"
-        class="btn"
+        class="btn btn2"
         @click="decline"
         value="Je décline la garde"
       />
@@ -44,7 +44,7 @@ export default {
 
   methods: {
     accept() {
-      console.dir(this);
+      // console.dir(this);
 
       this.axios
         .put(`http://localhost:6001/garde/accept/${this.idGarde}`)
@@ -79,20 +79,25 @@ export default {
 <style scoped>
 .bigBox {
   background-color: whitesmoke;
+  /* background-color: blue; */
+/* height: 80vh; */
+
 }
 .box {
+  /* background-color: green; */
+  height: 61vh;
   width: 100%;
-  height: 250px;
+  /* height: 250px; */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   padding: 50px;
 }
 
 .btn {
-  width: 65%;
+  width: 45%;
   height: 40px;
   font-family: "Livvic", sans-serif;
   border-radius: 15px;
@@ -113,6 +118,9 @@ export default {
   text-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px,
     #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px, #ff2d95 0px 0px 40px,
     #ff2d95 0px 0px 50px, #ff2d95 0px 0px 75px;
+}
+.btn1 {
+  margin-bottom: 20px;
 }
 /* TABLETTE */
 @media screen and (min-width: 481px) and (max-width: 768px) {

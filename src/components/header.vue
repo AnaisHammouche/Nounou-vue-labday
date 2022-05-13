@@ -180,6 +180,8 @@ export default {
   justify-content: space-around;
   align-items: center;
   height: 160px;
+    /* height: 14vh; */
+
   width: 100%;
   background-color: whitesmoke;
   font-family: cursive, "sans-serif";
